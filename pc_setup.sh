@@ -1,5 +1,9 @@
 #!/bin/sh
+sudo yum update -y
 sudo dd if=/dev/zero of=/swapfile count=4096 bs=1MiB
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
+sudo yum install screen
+sudo yum install python3
+sudo pip3 install requests bs4
